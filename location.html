@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ixtapa - Location</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<header>
+<div class="toolbar">
+    <span class="logo">IXTAPA WEB</span>
+
+<div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search...">
+    <button onclick="checkSearch()">Go</button>
+</div>
+
+    <div class="icons">
+        <span>🏠</span>
+        <span>📍</span>
+        <span>🏖️</span>
+        <span>☀️</span>
+        <span>🍽️</span>
+    </div>
+</div>
+
+<nav class="menu">
+    <a href="index.html">Home</a>
+    <a href="location.html">Location</a>
+    <a href="activities.html">Activities</a>
+    <a href="weather.html">Weather</a>
+    <a href="food.html">Food</a>
+</nav>
+
+<main>
+     <div class="image-row">
+      <img src="img/img2.jpg" alt="Location" class="page-img">
+  </div>
+
+    <p>Ixtapa is located in the state of Guerrero, Mexico.
+It is near the city of Zihuatanejo and beside the Pacific Ocean.
+Ixtapa has modern hotels, shopping areas and green spaces.
+Azul Ixtapa is one of the most famous hotels in this tourist area.</p>
+</main>
+
+<div id="snakeContainer" style="display:none; text-align:center;">
+    <h2>🐍 Snake Game</h2>
+    <canvas id="snakeGame" width="300" height="300"></canvas>
+    <p>Use arrow keys to play</p>
+</div>
+
+<footer>
+    <p>Made by Rodrigo Rodríguez</p>
+</footer>
+
+</div>
+
+<script>
+function checkSearch() {
+    const value = document.getElementById("searchInput").value.toLowerCase();
+    if (value === "snake") {
+        window.location.href = "snake.html";
+    }
+}
+</script>
+
+</body>
+</html>
